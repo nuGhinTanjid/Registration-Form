@@ -1,0 +1,126 @@
+  @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Open+Sans&display=swap');
+*{
+list-style: none;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Merriweather', serif;
+font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: rgb(138, 138, 159);
+}
+
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reg_form{
+    background: rgb(236, 88, 88);
+    padding: 25px;
+    border-radius: 5px;
+    width: 400px;
+}
+
+.reg_form .title{
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: hwb(208 94% 0%);
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.formWrap{
+    margin-top: 40px;
+}
+.formWrap .inputWrap{
+    margin-bottom: 20px;
+}
+
+.formWrap .inputWrap:last-child{
+    margin-bottom: 0;
+}
+
+.formWrap .inputWrap label{
+    display: block;
+    margin-bottom: 3px;
+    color: hwb(208 94% 0%);
+}
+
+.formWrap .inputGrp{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formWrap .inputGrp input[type="text"]{
+    width: 165px;
+}
+
+.formWrap input[type="text"]{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.formWrap input[type="text"]:focus{
+    border-color: brown;
+}
+
+.formWrap ul{
+    background: rgb(231, 209, 48);
+    padding: 8px 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+}
+
+.formWrap ul li:first-child{
+    margin-right: 15px;
+}
+.formWrap ul .radioWrap{
+    position: relative;
+    margin-bottom: 0;
+    
+}
+
+.formWrap ul .radioWrap .inputRadio{
+    position: relative;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.formWrap ul .radioWrap span{
+    display: inline-block;
+    font-size: 15px;
+    padding: 3px 20px;
+    border-radius: 3px;
+    color: #545871;
+
+
+}
+
+.formWrap ul .radioWrap:checked ~ span{
+    background: #ebd0ca;
+}
+
+
+.formWrap .submitBtn{
+    width: 100%;
+    background-color:  #ebd0ca;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.formWrap .submitBtn:hover{
+    background: white;
+}
